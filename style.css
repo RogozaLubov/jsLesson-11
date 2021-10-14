@@ -1,0 +1,57 @@
+@import url("reset.css");
+
+.task1{
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 0;
+    padding: 5px;
+    border: 5px groove rgb(143, 0, 12);
+    text-align: center;
+}
+h2{
+    font-size: 25px;
+    padding: 20px 0;
+}
+li{
+    list-style-type: none;
+}
+.tabs{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+.tab-list{
+    flex-grow: 1;
+    width: 50px;
+    padding: 5px;
+    background: rgb(236, 0, 118);
+    transition: width 0.5s;
+}
+.content{
+    width: 100%;
+    border: 2px solid black;
+}
+.content-list{
+    display: none;
+    height: 200px;
+    line-height: 30px;
+    background: rgb(233, 79, 187);
+}
+.tab-list.active{
+    width: 80px;
+    background: rgb(250, 246, 9);
+}
+.content-list.is-active{
+    display: block;
+}
+.is-active {
+    background-color: rgb(229, 142, 240);
+}
+
+.table-task2 td, .table-task3 td {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+}
